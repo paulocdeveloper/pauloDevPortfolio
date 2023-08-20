@@ -1,0 +1,514 @@
+
+header{ 
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(41, 46, 51);
+    box-shadow: 2px 2px 0 rgba(190, 21, 21, 0.39);
+    width: 100%;
+    height: 40px;
+    top: 0;
+    z-index: 1; 
+}
+
+#btn-header {
+    margin: 0 10px 0 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #fff;  
+}
+
+header nav a:hover{
+    color: rgb(190, 21, 21);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.background{
+    background-image: url(img/backgroundimg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;   
+}
+
+.container{
+    padding: 300px 0 0 0;  
+}
+
+.textHello{
+    font-size: 30px;
+    color: #fff;
+}
+
+h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.textDeveloper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.line{
+    border-right: 2px solid rgb(255, 255, 255);
+    width: 19ch;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(19),
+    blinking 0.5s infinite step-end alternate;
+    color: #fff;
+}
+
+@keyframes typing{
+    from {
+        width: 0;
+    }
+    to {
+        width: 19ch;
+    }  
+}
+
+@keyframes blinking{
+    50% {
+        border-color: transparent ;
+    }
+}
+
+#dowload{
+    font-family: Fira Code, serif;
+    padding: 20px 50px;
+    text-align: center;
+    box-shadow: 2px 2px 0 black;
+    background-color: rgb(241, 10, 10);
+    text-decoration: none ;
+    color: #ffffff;
+    font-weight: bold; 
+}
+
+#dowload:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+#about-background{
+    height: 100vh;
+    background-color: rgb(197, 195, 195);
+    padding: 0 50px 0 50px;
+    position: relative;
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg,
+    rgb(197, 195, 195) 0%, rgb(138, 137, 137) 74%);      
+}
+
+#about-background:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 350px; 
+}
+
+.conhecimentos{
+    padding: 100px 0 50px 0;
+}
+
+.content-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.html-img{
+    width: 50px;
+    margin-top: 50px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.html-btn, .css-btn, .javascript-btn, .git-btn {
+    width: 500px;
+    height: 300px;   
+}
+
+.css-img{
+    width: 50px;
+    margin: 50px 0 0 0;
+    animation: float 2s ease-in-out infinite;
+}
+
+.javascript-img{
+    width: 50px;
+    margin: 48px 0 0 0;
+    animation: float 3s ease-in-out infinite;
+}
+
+.git-img{
+    width: 45px;
+    position: relative;
+    top: -6px;
+    left: 70px;
+    margin:0;
+    animation: float 2s ease-in-out infinite;
+}
+
+.github-img{
+    position: relative;
+    top: 8px; 
+    right: 55px;
+    width: 75px;
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+}
+
+.design {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;  
+    margin: 20px 0 0 0;
+}
+
+.design img {
+    width: 100%;
+    max-width: 100px;
+    text-align: center;  
+}
+
+.git-btn {
+    padding-top: 60px;
+}
+
+.git-txt {
+    margin-top: 15px;
+}
+
+.figma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.figma-img {
+    animation: float 3s ease-in-out infinite;
+}
+
+.content-about2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+#sobre-background{ 
+    height: 100vh;
+    background: linear-gradient(#fff, #c7c2c2);
+}
+
+.sobre-title {   
+    padding-top: 100px;   
+}
+
+#paulo-img{
+    margin: 50px 0 50px 0;
+    width: 300px;
+    z-index: 0;
+    animation: float 3s ease-in-out infinite;   
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0)
+    }
+    50%{
+        transform: translateY(-20px)
+    }
+}
+
+.text-position {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-sobre{
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+    margin: 10px 0 10px 0;
+}
+
+#projetos-background{  
+    padding:0;
+    height: 100vh;
+    background-color: #c7c2c2;
+    background: linear-gradient(#c7c2c2, #fff);
+}
+
+.projetos {
+    padding-top: 100px;
+}
+
+.projeto1 {
+    margin:100px 0 0 0;
+    clear: right;
+    height: 300px;
+    width: 100%;
+    max-width: 1300px;
+    text-align: center;
+    display: inline-block;
+}
+
+.projeto-img {
+    border-radius: 5px;
+    width: 500px;
+    float: right;
+    margin: 0;
+}
+
+.projeto-btn, .projeto-btn2 {
+    position: relative;
+    top: 70px;
+    width: 100px;
+    padding: 20px 50px;
+    text-decoration: none;
+    background-color: #c7c2c2;
+    border: 1px solid black;
+    color: #000000;  
+}
+
+.projeto-btn:hover {
+    background-color: #18181a;
+    color: #fff;
+}
+
+.projeto-btn2:hover {
+    background-color: #18181a;
+    color: #fff;
+}
+
+.text-projeto {
+    margin: 0;
+}
+
+.projeto2 {
+    margin:100px 0 0 0;
+    clear: left;
+    height: 300px;
+    width: 100%;
+    max-width: 1300px;
+    text-align: center;
+    display: inline-block;
+}
+
+.projeto-img2 {
+    border-radius: 5px;
+    width: 500px;
+    float: left;
+    margin: 0;
+}
+
+.text-projeto2 {
+    margin: 0;  
+}
+
+.content-projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 100%;
+    height: 500px;
+}
+
+#contato-background{
+    height: 50vh;
+    background-color: #fff;
+    opacity: 70%;
+    color: #000000;
+}
+
+.contato {
+    padding-top: 50px;
+}
+
+.content-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email a{
+    text-decoration:none ;
+    color: #000000;
+    font-weight: bold;
+}
+
+.email a:hover{
+    color: rgb(190, 21, 21);
+}
+
+.buttonAction{
+    width: 110px;
+    height: 50px;
+    color: #000000;
+    margin: 10px;
+    background: #a5a4a4;
+    text-align: center;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-contato button:hover{
+    background-color: #8b8a8a;
+    color: rgb(190, 21, 21);
+}
+
+.buttonAction {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .buttonAction span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+  }
+  
+  .buttonAction span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 65%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+  }
+  
+  .buttonAction:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+  }
+  
+  .buttonAction:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+  }
+  
+  .buttonAction:hover span:last-child {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+  }
+  
+  span{
+    position: relative;
+    top: -5px;
+  }
+
+  .whatsapp-contato {
+    display: inline-flex;
+    align-items: center; 
+  }
+
+  .whatsapp-number {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .whatsapp-number:hover {
+    color: rgb(190, 21, 21);
+  }
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: rgb(41, 46, 51);
+    color: #fff;
+    width: 100%;
+    height: 40px;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:70px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+footer a{
+    color: #fff;
+}
+
+.github{
+    margin: 0 10px 0 10px;
+}
+
+.linkedin{
+    margin-right: 10%;
+}
+
+.linkedin:hover, .github:hover{
+    color: rgb(190, 21, 21);
+}
