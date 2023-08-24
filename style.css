@@ -239,7 +239,7 @@ h1{
 
 .text-position {
     width: 100%;
-    display: flex;
+    text-align: -webkit-center;
     justify-content: center;
 }
 
