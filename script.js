@@ -85,3 +85,5 @@ sr.reveal('.content-projetos',{
     rotate:{ x:100, y:10, z:0},
     duration:2000
  }) 
+
+ 
