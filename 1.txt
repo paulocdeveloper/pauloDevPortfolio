@@ -31,19 +31,16 @@
             <section>
                 <div class="background">
                     <div class="container">
-                        <div class="container-flex">
-                            <div>
-                                <p class="textHello"> &lt; ola &#128075; eu sou o </p>
-                            </div>    
-                            <div>
-                                <h1> Paulo Cesar&sol;&gt; </h1>
-                                <div class="efect-typing">
-                                    <p>Front-End <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-                                </div>
-                            </div>    
-                            <button id="dowload">Dowload CV</button>
+                        <div>
+                            <p class="textHello"> &lt; ola &#128075; eu sou o </p>
                         </div>    
-                            
+                        <div>
+                            <h1> Paulo Cesar &sol;&gt; </h1>
+                        </div>    
+                        <div class="textDeveloper">
+                            <p class="line typing-animation">Front-End Developer</p>
+                        </div>
+                        <button id="dowload">Dowload CV</button>
                    </div>                         
                 </div>
 
@@ -179,3 +176,11 @@
         <script src="script.js"></script>
     </body>
 </html>
+
+
+
+
+<div class="textDeveloper">
+                            <p class="line typing-animation">Front-End Developer</p>
+                            
+                        </div>

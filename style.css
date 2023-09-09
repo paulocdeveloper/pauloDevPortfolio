@@ -4,10 +4,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(41, 46, 51);
-    box-shadow: 2px 2px 0 rgba(190, 21, 21, 0.39);
+    background-color: #f2f2f2;
+    
+    box-shadow: 2px 2px 0 #3C291A;
     width: 100%;
-    height: 40px;
+    height: 60px;
     top: 0;
     z-index: 1; 
 }
@@ -18,7 +19,7 @@ header{
 
 header nav a{
     text-decoration: none;
-    color: #fff;  
+    color: #3C291A;  
 }
 
 header nav a:hover{
@@ -39,7 +40,10 @@ ul{
 }
 
 .container{
-    padding: 300px 0 0 0;  
+    height: 100%;
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
 }
 
 .textHello{
@@ -52,54 +56,59 @@ h1{
     color: #fff;
 }
 
-.textDeveloper{
+.efect-typing {
+    
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 30px;
-    margin-bottom: 40px;
-}
-
-.line{
-    border-right: 2px solid rgb(255, 255, 255);
-    width: 19ch;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 2s steps(19),
-    blinking 0.5s infinite step-end alternate;
+    align-items: center;
     color: #fff;
-}
-
-@keyframes typing{
-    from {
-        width: 0;
-    }
-    to {
-        width: 19ch;
-    }  
-}
-
-@keyframes blinking{
-    50% {
-        border-color: transparent ;
-    }
-}
-
+  }
+  .efect-typing p {
+    font-family: 'Fira code', 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .efect-typing p span.typed-text {
+    font-weight: normal;
+    color: rgb(250, 0, 0);
+  }
+  .efect-typing p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .efect-typing p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
 #dowload{
     font-family: Fira Code, serif;
     padding: 20px 50px;
     text-align: center;
     box-shadow: 2px 2px 0 black;
-    background-color: rgb(241, 10, 10);
+    background-color: #f2f2f2;
     text-decoration: none ;
-    color: #ffffff;
+    color: #3C291A;  
     font-weight: bold; 
+
+    border-radius: .5rem;
 }
 
 #dowload:hover{
-    background-color: rgb(255, 255, 255);
-    color: #000000;
+    background-color: #f2f2f2bb;
 }
 
 #about-background{
@@ -272,7 +281,7 @@ h1{
 }
 
 .projeto-img {
-    border-radius: 5px;
+    border-radius: .5rem;
     width: 500px;
     float: right;
     margin: 0;
@@ -285,17 +294,19 @@ h1{
     padding: 20px 50px;
     text-decoration: none;
     background-color: #c7c2c2;
-    border: 1px solid black;
-    color: #000000;  
+    border: 1px solid #3C291A;
+    border-radius: .5rem;
+    color: #3C291A;  
+    
 }
 
 .projeto-btn:hover {
-    background-color: #18181a;
+    background-color: #3C291A;
     color: #fff;
 }
 
 .projeto-btn2:hover {
-    background-color: #18181a;
+    background-color: #3C291A;
     color: #fff;
 }
 
@@ -314,7 +325,7 @@ h1{
 }
 
 .projeto-img2 {
-    border-radius: 5px;
+    border-radius: .5rem;
     width: 500px;
     float: left;
     margin: 0;
@@ -363,7 +374,7 @@ h1{
 }
 
 .email a:hover{
-    color: rgb(190, 21, 21);
+    color: #3C291A;
 }
 
 .buttonAction{
@@ -388,6 +399,7 @@ h1{
     position: relative;
     overflow: hidden;
     border: 1px solid #18181a;
+    border-radius: .5rem;
     color: #18181a;
     display: inline-block;
     font-size: 15px;
@@ -447,11 +459,6 @@ h1{
     transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
   }
   
-  span{
-    position: relative;
-    top: -5px;
-  }
-
   .whatsapp-contato {
     display: inline-flex;
     align-items: center; 
@@ -464,7 +471,7 @@ h1{
   }
 
   .whatsapp-number:hover {
-    color: rgb(190, 21, 21);
+    color: #3C291A;
   }
 
 footer{
