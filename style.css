@@ -64,14 +64,15 @@ h1{
     color: #fff;
   }
   .efect-typing p {
-    font-family: 'Fira code', 'Courier New', Courier, monospace;
-    font-size: 2rem;
+    font-family: 'Fira code', monospace;
+    font-size: 1.5rem;
     padding: 0.5rem;
     margin-bottom: 2rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
     text-align: center;
     overflow: hidden;
+    font-weight: normal;
   }
   .efect-typing p span.typed-text {
     font-weight: normal;
@@ -111,129 +112,36 @@ h1{
     background-color: #f2f2f2bb;
 }
 
-#about-background{
-    height: 100vh;
-    background-color: rgb(197, 195, 195);
-    padding: 0 50px 0 50px;
-    position: relative;
-    background-color: #3bb78f;
-    background-image: linear-gradient(315deg,
-    rgb(197, 195, 195) 0%, rgb(138, 137, 137) 74%);      
-}
 
-#about-background:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 350px; 
+
+.list-skills li {
+    height: 250px;
+    
 }
 
 .conhecimentos{
-    padding: 100px 0 50px 0;
+    padding: 100px 0;
 }
 
-.content-about{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-}
-
-.html-img{
+.html-img, .css-img, .javascript-img {
     width: 50px;
-    margin-top: 50px;
-    animation: float 3s ease-in-out infinite;
-}
-
-.html-btn, .css-btn, .javascript-btn, .git-btn {
-    width: 500px;
-    height: 300px;   
-}
-
-.css-img{
-    width: 50px;
-    margin: 50px 0 0 0;
-    animation: float 2s ease-in-out infinite;
-}
-
-.javascript-img{
-    width: 50px;
-    margin: 48px 0 0 0;
-    animation: float 3s ease-in-out infinite;
+    animation: float 0s ease-in-out infinite;
 }
 
 .git-img{
     width: 45px;
-    position: relative;
-    top: -6px;
-    left: 70px;
-    margin:0;
-    animation: float 2s ease-in-out infinite;
+    animation: float 0s ease-in-out infinite;
 }
 
 .github-img{
-    position: relative;
-    top: 8px; 
-    right: 55px;
     width: 75px;
-    position: relative;
-    animation: float 3s ease-in-out infinite;
-}
-
-.design {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 300px;  
-    margin: 20px 0 0 0;
-}
-
-.design img {
-    width: 100%;
-    max-width: 100px;
-    text-align: center;  
-}
-
-.git-btn {
-    padding-top: 60px;
-}
-
-.git-txt {
-    margin-top: 15px;
-}
-
-.figma {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.figma-img {
-    animation: float 3s ease-in-out infinite;
-}
-
-.content-about2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-}
-
-#sobre-background{ 
-    height: 100vh;
-    background: linear-gradient(#fff, #c7c2c2);
-}
-
-.sobre-title {   
-    padding-top: 100px;   
+    animation: float 0s ease-in-out infinite;
 }
 
 #paulo-img{
-    margin: 50px 0 50px 0;
+    margin: 50px 0 10px 0;
     width: 300px;
-    z-index: 0;
+    
     animation: float 3s ease-in-out infinite;   
 }
 
@@ -259,45 +167,24 @@ h1{
     margin: 10px 0 10px 0;
 }
 
-#projetos-background{  
-    padding:0;
-    height: 100vh;
-    background-color: #c7c2c2;
-    background: linear-gradient(#c7c2c2, #fff);
-}
 
 .projetos {
     padding-top: 100px;
 }
 
 .projeto1 {
-    margin:100px 0 0 0;
-    clear: right;
-    height: 300px;
     width: 100%;
     max-width: 1300px;
     text-align: center;
     display: inline-block;
 }
 
+
 .projeto-img {
     border-radius: .5rem;
     width: 500px;
-    float: right;
-    margin: 0;
-}
-
-.projeto-btn, .projeto-btn2 {
-    position: relative;
-    top: 70px;
-    width: 100px;
-    padding: 20px 50px;
-    text-decoration: none;
-    background-color: #c7c2c2;
-    border: 1px solid #3C291A;
-    border-radius: .5rem;
-    color: #3C291A;  
     
+    margin: 0;
 }
 
 .projeto-btn:hover {
@@ -315,9 +202,6 @@ h1{
 }
 
 .projeto2 {
-    margin:100px 0 0 0;
-    clear: left;
-    height: 300px;
     width: 100%;
     max-width: 1300px;
     text-align: center;
@@ -327,7 +211,6 @@ h1{
 .projeto-img2 {
     border-radius: .5rem;
     width: 500px;
-    float: left;
     margin: 0;
 }
 
@@ -518,4 +401,69 @@ footer a{
 
 .linkedin:hover, .github:hover{
     color: rgb(190, 21, 21);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list-skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+@media screen and (min-width: 380px) {
+    .list-skills {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .list-skills {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .list-skills {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }

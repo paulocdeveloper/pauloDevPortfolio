@@ -21,6 +21,11 @@
 
     .container {
         height: 55vh;
+        padding-top: 120px;
+    }
+
+    #dowload{
+        padding: 15px 25px;
     }
 
     #about-background {
@@ -30,7 +35,7 @@
 
     .content-about {
         flex-direction: column;
-        height: 900px;
+        height: 960px;
     }
 
     .html-btn,
@@ -38,6 +43,18 @@
     .javascript-btn,
     .git-btn {
         max-width: 100%;
+    }
+
+    .git-btn{
+        padding-top: 15px;
+    }
+
+    .content-about2{
+        height: 260px;
+    }
+
+    .design {
+        margin: 0;
     }
 
     h4,
@@ -48,7 +65,7 @@
     }
 
     #sobre-background {
-        height: 110vh;
+        height: 120vh;
     }
 
     #projetos-background {
@@ -138,7 +155,7 @@
     }
 
     #about-background {
-        height: 200vh;
+        height: 210vh;
     }
 
     #projetos-background {
