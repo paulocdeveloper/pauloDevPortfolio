@@ -124,18 +124,47 @@ h1{
 }
 
 .html-img, .css-img, .javascript-img {
-    width: 50px;
-    animation: float 0s ease-in-out infinite;
+    width: 75px;
+    animation: float 4s ease-in-out infinite;
 }
 
 .git-img{
-    width: 45px;
-    animation: float 0s ease-in-out infinite;
+    width: 75px;
+    
 }
 
 .github-img{
     width: 75px;
-    animation: float 0s ease-in-out infinite;
+    
+}
+
+.figma-img {
+    width: 85px;
+    
+}
+
+.java-img {
+    width: 100px;
+    
+}
+
+.angular-img {
+    width: 75px;
+   
+}
+
+.sql-img {
+    width: 130px;
+    
+}
+
+.content-img {
+    height: 100px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.sobre-title {
+    padding: 100px 0 0 0;
 }
 
 #paulo-img{
@@ -169,7 +198,7 @@ h1{
 
 
 .projetos {
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .projeto1 {
@@ -234,7 +263,7 @@ h1{
 }
 
 .contato {
-    padding-top: 50px;
+    padding: 100px 0 30px 0;
 }
 
 .content-contato{
