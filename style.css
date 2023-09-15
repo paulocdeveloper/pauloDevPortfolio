@@ -196,63 +196,19 @@ h1{
     margin: 10px 0 10px 0;
 }
 
+#projeto{
+    margin-bottom: 100px;
+}
 
 .projetos {
     padding: 100px 0;
 }
-
-.projeto1 {
-    width: 100%;
-    max-width: 1300px;
-    text-align: center;
-    display: inline-block;
-}
-
 
 .projeto-img {
     border-radius: .5rem;
     width: 500px;
     
     margin: 0;
-}
-
-.projeto-btn:hover {
-    background-color: #3C291A;
-    color: #fff;
-}
-
-.projeto-btn2:hover {
-    background-color: #3C291A;
-    color: #fff;
-}
-
-.text-projeto {
-    margin: 0;
-}
-
-.projeto2 {
-    width: 100%;
-    max-width: 1300px;
-    text-align: center;
-    display: inline-block;
-}
-
-.projeto-img2 {
-    border-radius: .5rem;
-    width: 500px;
-    margin: 0;
-}
-
-.text-projeto2 {
-    margin: 0;  
-}
-
-.content-projetos{
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    width: 100%;
-    height: 500px;
 }
 
 #contato-background{
