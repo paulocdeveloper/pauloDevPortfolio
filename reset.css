@@ -31,3 +31,9 @@ h3{
 .projeto2, .contato , .content-contato, .email, .whatsapp-contato{
     visibility: hidden;
 }
+
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
