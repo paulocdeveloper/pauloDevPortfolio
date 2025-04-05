@@ -1,214 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Paulo Cesar - Front End developer - Portfolio</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="responsive.css">
-        <link rel="stylesheet" href="reset.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a id="btn-header" href="index.html">Inicio</a>
-                        <a id="btn-header" href="#sobre-background">Sobre</a>
-                        <a id="btn-header" href="#projetos-background">Projetos</a>
-                        <a id="btn-header" href="#contato-background">Contato</a>
-                    </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Cesar - Front End Developer - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#hero">PC</a>
+            </div>
+            <nav class="nav">
+                <button class="nav-toggle" aria-label="Abrir Menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#hero" class="nav-link">Início</a></li>
+                    <li><a href="#skills" class="nav-link">Conhecimentos</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
                 </ul>
-            </nav>        
-        </header>
-        <main>
-            <section>
-                <div class="background">
-                    <div class="container">
-                        <div class="container-flex">
-                            <div>
-                                <p class="textHello"> &lt; ola &#128075; eu sou o </p>
-                            </div>    
-                            <div>
-                                <h1> Paulo Cesar&sol;&gt; </h1>
-                                <div class="efect-typing">
-                                    <p>Front-End <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-                                </div>
-                            </div>    
-                            <button id="dowload">Dowload CV</button>
-                        </div>    
-                            
-                   </div>                         
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-greeting">&lt; olá &#128075; eu sou o</p>
+                    <h1 class="hero-title">Paulo Cesar&sol;&gt;</h1>
+                    <div class="hero-typing">
+                        <p>Front-End <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Download CV</a>
                 </div>
-                <h3 class="conhecimentos">Conhecimentos</h3>
-                <ol class="list-skills">
+            </div>
+            <div class="hero-scroll">
+                <a href="#skills">
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">Conhecimentos</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="img/html.png" alt="HTML">
+                        </div>
+                        <h3 class="skill-title">HTML</h3>
+                        <p class="skill-desc">Web site responsivo com suporte a usuários em geral.</p>
+                    </div>
                     
-                    <li>
-                        <div class="content-img">
-                            <img class="html-img" src="img/html.png" alt="">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="img/css.png" alt="CSS">
                         </div>
-                        
-                            <h4>HTML</h4>
-                            <em>Web site responsivo com <br> suporte a usuarios em geral.</em>
-                    </li>
-                    <li>
-                        <div class="content-img">
-                            <img class="css-img" src="img/css.png" alt="">
-                        </div>
-                        
-                            <h4>CSS</h4>
-                            <em>Posicionamento de elementos,  <br>Estilização, Animações e muito mais.</em>
-                    </li>
-                    <li>
-                        <div class="content-img">
-                            <img class="javascript-img" src="img/javascript.png" alt="">
-                        </div>
-                        
-                            <h4>JAVASCRIPT</h4>
-                            <em>Desenvolvimento web, Comportamento <br> interativo mais dinâmico para o usuário.</em>
-                    </li>
-                    <li>
-                        <div class="content-img">
-                            <img class="git-img" src="img/git2.png" alt="">
-                        </div>
-                        
-                        <h4 class="git-txt">Git / Github</h4>
-                        <em>Armazenar, administrar o código e registro de mudanças.</em>
-                    </li>
-                    <li>
-                        <div class="content-img">
-                            <img class="figma-img" src="img/ui.png" alt="">
-                        </div>
-                        
-                        <h4>Figma</h4>                            
-                        <em>Especialmente focado na experiência do usuário,  criação de protótipos de aplicativos e sites.</em>
-                    </li>
-                    <li>
-                        <div class="content-img">
-                            <img class="java-img" src="img/java.png" alt="">
-                        </div>
-                       
-                        <h4>Java</h4>                            
-                        <em>Atualmente estudando a linguagem!</em>
-                    </li>
-                    <li>
-                        <div class="content-img">
-                            <img class="angular-img" src="img/angular.png" alt="">
-                        </div>
-                        
-                        <h4>Angular</h4>                            
-                        <em>Atualmente estudando o framework!</em>
-                    </li>
-                    <li>
-                        <div class="content-img">
-                            <img class="sql-img" src="img/sql.png" alt="">
-                        </div>
-                        
-                        <h4>SQL</h4>                            
-                        <em>Atualmente estudando banco de dados!</em>
-                    </li>
-                </ol>
-
-                <div id="sobre-background">
-                    <h3 class="sobre-title">Sobre mim</h3>                    
-                    <div class="caixa-sobre">
-                        <img id="paulo-img" src="img/paulo.png" alt="">
+                        <h3 class="skill-title">CSS</h3>
+                        <p class="skill-desc">Posicionamento de elementos, estilização, animações e muito mais.</p>
                     </div>
-                    <div class="text-position">
-                        <div>
-                            <p class="text-sobre">Olá! Seja muito bem-vindo ao meu Portfolio Profissional.
-                                Aqui você vai encontrar tudo em relação aos meus projetos. 
-                            </p>
-                            <p class="text-sobre">
-                                Meu nome é Paulo César, sou Desenvolvedor Front End Web e Mobile.                            
-                                Atualmente trabalho como freelancer e estou cursando analise e
-                                desenvolvimento de sistemas na universidade Uninove.
-                            </p>
-                            <p class="text-sobre">
-                                Amo tudo relacionado a tecnologia! Foi dai que conheci e decidi
-                                me dedicar em conhecer mais sobre a área. Não é atoa que eu esteja hoje
-                                aqui, firme e forte querendo aprender mais e mais a cada dia.
-                            </p>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="img/javascript.png" alt="JavaScript">
                         </div>
-                    </div>   
+                        <h3 class="skill-title">JavaScript</h3>
+                        <p class="skill-desc">Desenvolvimento web, comportamento interativo mais dinâmico para o usuário.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="img/git2.png" alt="Git/Github">
+                        </div>
+                        <h3 class="skill-title">Git / Github</h3>
+                        <p class="skill-desc">Armazenar, administrar o código e registro de mudanças.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="img/ui.png" alt="Figma">
+                        </div>
+                        <h3 class="skill-title">Figma</h3>
+                        <p class="skill-desc">Especialmente focado na experiência do usuário, criação de protótipos de aplicativos e sites.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="img/java.png" alt="Java">
+                        </div>
+                        <h3 class="skill-title">Java</h3>
+                        <p class="skill-desc">Atualmente estudando a linguagem!</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="img/angular.png" alt="Angular">
+                        </div>
+                        <h3 class="skill-title">Angular</h3>
+                        <p class="skill-desc">Atualmente estudando o framework!</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="img/sql.png" alt="SQL">
+                        </div>
+                        <h3 class="skill-title">SQL</h3>
+                        <p class="skill-desc">Atualmente estudando banco de dados!</p>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <ol id="projetos-background">
-                    <h3 class="projetos">Projetos</h3>    
-                    <li id="projeto" class="projeto">
-                        <img class="projeto-img" src="img/projetos/seiBet01.png" alt="">
-                        <h4 class="ecommerce">seiBet - Cassino Esportivo</h4>
-                        <p class="text-projeto"> Criado com base em um projeto FIGMA de um cliente, foi desenvolvido com HTML5, CSS3 e Javascript. <br>
-                        O projeto atualmente está em andamento para sua versão final. Mas já conta com Butões funcionais, efeitos visuais e sua estrutura HOME construida.
-                        </p> 
-                        <a href="https://paulocdeveloper.github.io/seibet/" target="_blank">Visitar</a>
-
-
-                        
-                    </li>                    
-                    <li class="projeto">
-                        <img class="projeto-img" src="img/projetos/arowwai01.png" alt="">
-                        <h4 class="ecommerce2">arowwai - Loja Virtual</h4>
-                        <p class="text-projeto2"> Uma loja virtual criada com base em um projeto pessoal, foi desenvolvido com HTML5, CSS3 e Javascript. <br>
-                            Sua HOME está totalmente pronta. Ao decorrer do tempo pretendo colocar uma pagina para quando clicar em um determinado produto abrir somente ele de forma dinâmica.
-                        </p> 
-
-                        <a href="https://paulocdeveloper.github.io/lojaPHP/" target="_blank" rel="noopener noreferrer">Visitar</a>
-                        
-                    </li>
-                </ol>
-                <div id="contato-background">
-                    <h3 class="contato">Contatos</h3>
-                    <div class="content-contato">
-                        <a href="https://github.com/paulocdeveloper"target="_blank">
-                            <button class="buttonAction" role="button">
-                                <span class="text">                            
-                                    <img class="icon-contato" src="img/icons8-github-24.png" alt="">
-                                </span><span>Github</span>
-                            </button>
-                        </a>
-                        <a href="https://www.linkedin.com/in/paulo-ceesar/"target="_blank">
-                            <button class="buttonAction" role="button">
-                                <span class="text">
-                                    <img class="icon-contato" src="img/icons8-linkedin-24.png" alt="">
-                                </span><span>LinkedIn</span>
-                            </button>
-                        </a>
-                        <a href="https://www.instagram.com/_paul.cesar/"target="_blank">
-                            <button class="buttonAction" role="button">
-                                <span class="text">
-                                    <img class="icon-contato" src="img/icons8-instagram-24.png" alt="">
-                                </span><span>Instagram</span>
-                            </button>
-                        </a>
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">Sobre mim</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="img/paulo.png" alt="Paulo Cesar">
                     </div>
-                    <div class="email">
-                        <h4>Email: </h4>
-                        <a href="mailto:paulocesar.frontend@gmail.com?subject=Assunto do email">paulocesar.frontend@gmail.com</a>                       
+                    <div class="about-text">
+                        <p>Olá! Seja muito bem-vindo ao meu Portfolio Profissional. Aqui você vai encontrar tudo em relação aos meus projetos.</p>
+                        <p>Meu nome é Paulo César, sou Desenvolvedor Front End Web e Mobile. Atualmente trabalho como freelancer e estou cursando análise e desenvolvimento de sistemas na universidade Uninove.</p>
+                        <p>Amo tudo relacionado a tecnologia! Foi daí que conheci e decidi me dedicar em conhecer mais sobre a área. Não é à toa que eu esteja hoje aqui, firme e forte querendo aprender mais e mais a cada dia.</p>
                     </div>
-                    <div class="whatsapp-contato">
-                        <img src="img/icons8-whatsapp-32.png" alt="">
-                        <a class="whatsapp-number" href="https://api.whatsapp.com/send/?phone=5511951130928&text&type=phone_number&app_absent=0" target="_blank">(11)95113-0928</a>
-                    </div>    
                 </div>
-                <footer> 
-                    <p class="redes"> Redes Sociais: </p>
-                    <a class="github" href="https://github.com/paulocdeveloper" target="_blank"><i class="bi bi-github"></i></a>
-                    <a class="linkedin" href="https://www.linkedin.com/in/paulo-ceesar/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    <p class="textFooter">Desenvolvido com &#128147; por Paulo César</p>     
-                </footer>                
-            </section>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-            <a href="https://api.whatsapp.com/send/?phone=5511951130928&text&type=phone_number&app_absent=0" class="float" target="_blank">
-                <i class="fa fa-whatsapp my-float"></i>
-            </a>
-        </main>
-        <script src="script.js"></script>
-    </body>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Projetos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/projetos/seiBet01.png" alt="seiBet - Cassino Esportivo">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">seiBet - Cassino Esportivo</h3>
+                            <p class="project-desc">Criado com base em um projeto FIGMA de um cliente, foi desenvolvido com HTML5, CSS3 e Javascript. O projeto atualmente está em andamento para sua versão final. Mas já conta com Butões funcionais, efeitos visuais e sua estrutura HOME construída.</p>
+                            <a href="https://paulocdeveloper.github.io/seibet/" target="_blank" class="btn btn-outline">Visitar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/projetos/arowwai01.png" alt="arowwai - Loja Virtual">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">arowwai - Loja Virtual</h3>
+                            <p class="project-desc">Uma loja virtual criada com base em um projeto pessoal, foi desenvolvido com HTML5, CSS3 e Javascript. Sua HOME está totalmente pronta. Ao decorrer do tempo pretendo colocar uma pagina para quando clicar em um determinado produto abrir somente ele de forma dinâmica.</p>
+                            <a href="https://paulocdeveloper.github.io/lojaPHP/" target="_blank" class="btn btn-outline">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Contato</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:paulocesar.frontend@gmail.com">paulocesar.frontend@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-whatsapp"></i>
+                            <a href="https://api.whatsapp.com/send/?phone=5511951130928" target="_blank">(11) 95113-0928</a>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/paulocdeveloper" target="_blank" class="social-link">
+                            <i class="bi bi-github"></i>
+                            <span>Github</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/paulo-ceesar/" target="_blank" class="social-link">
+                            <i class="bi bi-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/_paul.cesar/" target="_blank" class="social-link">
+                            <i class="bi bi-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Desenvolvido com <i class="bi bi-heart-fill"></i> por Paulo César</p>
+            <div class="footer-social">
+                <a href="https://github.com/paulocdeveloper" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/paulo-ceesar/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send/?phone=5511951130928" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
 </html>
+

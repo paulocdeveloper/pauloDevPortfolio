@@ -1,165 +1,167 @@
 /* Estilos para tablets */
 @media (min-width: 800px) and (max-width: 875px) {
     .background {
-        background-size: 100vh;
+      background-size: 100vh;
     }
-}
-
-/* Estilos para dispositivos móveis */
-@media (max-width: 800px) {
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media (max-width: 800px) {
     header {
-        visibility: hidden;
+      visibility: hidden;
     }
-
+  
     .background {
-        background-image: url(img/backgroundimg.jpg);
-        background-position: top;
-        background-size: 220%;
-        width: 100%;
-        height: 100vh;
+      background-image: url(img/backgroundimg.jpg);
+      background-position: top;
+      background-size: 220%;
+      width: 100%;
+      height: 100vh;
     }
-
+  
     .container {
-        height: 55vh;
-        padding-top: 120px;
+      height: 55vh;
+      padding-top: 120px;
     }
-
-    #dowload{
-        padding: 15px 25px;
+  
+    #dowload {
+      padding: 15px 25px;
     }
-
+  
     #about-background {
-        height: 170vh;
-        text-align: center;
+      height: 170vh;
+      text-align: center;
     }
-
+  
     .content-about {
-        flex-direction: column;
-        height: 960px;
+      flex-direction: column;
+      height: 960px;
     }
-
+  
     .html-btn,
     .css-btn,
     .javascript-btn,
     .git-btn {
-        max-width: 100%;
+      max-width: 100%;
     }
-
-    .git-btn{
-        padding-top: 15px;
+  
+    .git-btn {
+      padding-top: 15px;
     }
-
-    .content-about2{
-        height: 260px;
+  
+    .content-about2 {
+      height: 260px;
     }
-
+  
     .design {
-        margin: 0;
+      margin: 0;
     }
-
+  
     h4,
     em {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
+  
     #sobre-background {
-        height: 120vh;
+      height: 120vh;
     }
-
+  
     #projetos-background {
-        height: 175vh;
+      height: 175vh;
     }
-
+  
     .text-sobre {
-        max-width: 90%;
+      max-width: 90%;
     }
-
+  
     .content-projetos {
-        display: block;
+      display: block;
     }
-
+  
     .projeto-img,
     .projeto-img2,
     .projeto1,
     .projeto2 {
-        max-width: 300px;
-        text-align: center;
+      max-width: 300px;
+      text-align: center;
     }
-
+  
     .projeto1,
     .projeto2 {
-        height: 600px;
+      height: 600px;
     }
-
+  
     .ecommerce {
-        clear: right;
+      clear: right;
     }
-
+  
     .ecommerce2 {
-        clear: left;
+      clear: left;
     }
-
+  
     #contato-background {
-        height: 50vh;
+      height: 50vh;
     }
-
+  
     footer {
-        height: 50px;
+      height: 50px;
     }
-
+  
     .redes,
     .github,
     .linkedin {
-        visibility: hidden;
+      visibility: hidden;
     }
-
+  
     .textFooter {
-        position: relative;
-        right: 90px;
+      position: relative;
+      right: 90px;
     }
-
+  
     .float {
-        visibility: hidden;
+      visibility: hidden;
     }
-}
-
-/* Estilos para telas ainda menores */
-@media (max-width: 400px) {
+  }
+  
+  /* Estilos para telas ainda menores */
+  @media (max-width: 400px) {
     header {
-        width: 0;
+      width: 0;
     }
-
+  
     .textHello {
-        font-size: 20px;
+      font-size: 20px;
     }
-
+  
     h1 {
-        font-size: 30px;
+      font-size: 30px;
     }
-
+  
     p {
-        font-size: 13px;
+      font-size: 13px;
     }
-
+  
     .conhecimentos,
     .sobre-title,
     .projetos,
     .contato {
-        font-size: 30px;
+      font-size: 30px;
     }
-
+  
     #about-background {
-        height: 210vh;
+      height: 210vh;
     }
-
+  
     #projetos-background {
-        height: 190vh;
+      height: 190vh;
     }
-
+  
     .buttonAction {
-        margin: 10px;
-        width: 80px;
+      margin: 10px;
+      width: 80px;
     }
-}
+  }
+  
+  
